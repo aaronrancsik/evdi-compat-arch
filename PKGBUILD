@@ -10,7 +10,7 @@ _pkgver="${pkgver%%.r*}"
 pkgrel=1
 pkgdesc='kernel module for DisplayLink driver, aimed at compatibility with DisplayLink package and Official kernels'
 arch=('i686' 'x86_64')
-url='https://github.com/Varun-garg/evdi-compat'
+url='https://github.com/aaronrancsik/evdi-compat'
 license=('GPL')
 depends=('dkms')
 makedepends=('git' 'libdrm')
@@ -19,7 +19,7 @@ provides=("evdi=${_pkgver}")
 conflicts=('evdi' 'evdi-git')
 _srcdir="${pkgname%-git}"
 source=(
-  'git+https://github.com/Varun-garg/evdi-compat'
+  'git+https://github.com/aaronrancsik/evdi-compat'
 )
 source[0]+='#branch=devel'
 md5sums=('SKIP')
